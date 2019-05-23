@@ -27,7 +27,7 @@ if [ "$SHA1SUM_ROOT" == "$SHA1SUM_EXT" ]; then
 		echo "2.Sha1sums match."
 		e2fsck -f /dev/mapper/sdcard
 		resize2fs -f /dev/mapper/sdcard
-		echo "Done. Reboot and rebuild initramfs."
+		echo "Done. Reboot and rebuild initramfs. (reboot -f)"
 		#poweroff -f
 		#reboot -f
 	else
